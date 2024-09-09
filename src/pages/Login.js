@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+import Template from '../components/Template';
 
-const Login = () => {
+const Login = ({ setIsLoggedIn }) => {
   return (
-    <div>Login</div>
-  )
-}
+    <Template
+      title="Welcome Back"
+      desc1="Experience the best travel adventures with JourneyBazaar."
+      desc2="Login to access your personalized travel itineraries and exclusive offers."
+      formtype="login"
+      setIsLoggedIn={setIsLoggedIn}  // Ensure this is passed correctly
+    />
+  );
+};
 
-export default Login
+export default Login;
